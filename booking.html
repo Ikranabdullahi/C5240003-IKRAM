@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking | Hope Hospital</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container">
+      <h1>Patient Booking Form</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section 1: Booking Form -->
+    <section class="section" id="form">
+      <h2>Book an Appointment</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Patient Information</legend>
+
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required placeholder="Your Full Name"><br><br>
+
+          <label for="major">Department:</label><br>
+          <select id="major" name="major">
+            <option>Eye</option>
+            <option>General</option>
+            <option>Emergency</option>
+          </select><br><br>
+
+          <label>Gender:</label><br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br><br>
+
+          <label>Hobbies:</label><br>
+          <input type="checkbox" id="read" name="hobbies" value="Reading">
+          <label for="read">Reading</label>
+          <input type="checkbox" id="music" name="hobbies" value="Music">
+          <label for="music">Music</label><br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Your message..."></textarea><br><br>
+
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Section 2: Emergency Booking Info -->
+    <section class="section" id="emergency">
+      <h2>Need Urgent Help?</h2>
+      <p>Call our emergency line: <strong>‪+252 61 9876543‬</strong></p>
+    </section>
+
+    <!-- Section 3: Operating Hours -->
+    <section class="section" id="hours">
+      <h2>Operating Hours</h2>
+      <p>We are open from <strong>8:00 AM</strong> to <strong>10:00 PM</strong>, every day.</p>
+    </section>
+
+    <!-- Section 4: Appointment Policy -->
+    <section class="section" id="policy">
+      <h2>Appointment Policy</h2>
+      <p>Please book at least one day in advance. Cancellations must be informed 3 hours ahead.</p>
+    </section>
+
+    <!-- Section 5: Data Privacy -->
+    <section class="section" id="privacy">
+      <h2>Data Privacy</h2>
+      <p>All your submitted data is kept confidential and used only for medical purposes.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hope Eye & General Hospital | All rights reserved</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* style.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafd;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for consistent width */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #004a99;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a:focus {
+  background-color: #e6f0ff;
+  color: #004a99;
+  outline: none;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 40px 0;
+}
+
+/* Sections styling */
+.section {
+  background-color: #fff;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 74, 153, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.section h2 {
+  color: #004a99;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+  border-bottom: 3px solid #004a99;
+  padding-bottom: 8px;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+/* Paragraph and list styling inside sections */
+.section p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  background: url('data:image/svg+xml;utf8,<svg fill="%23004a99" height="12" viewBox="0 0 16 16" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.5l-3-3 1.4-1.4L6 7.7l5.6-5.6L13 3.5z"/></svg>') no-repeat left center;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #444;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+table thead tr {
+  background-color: #004a99;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f1f7ff;
+}
+
+table tfoot tr {
+  background-color: #e1e9ff;
+  font-weight: 700;
+}
+
+/* Gallery images */
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 30%;
+  max-width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 74, 153, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 74, 153, 0.4);
+}
+
+/* Forms */
+form fieldset {
+  border: 2px solid #004a99;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f5faff;
+}
+
+form legend {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #004a99;
+  padding: 0 10px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #004a99;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #004a99;
+  outline: none;
+  background-color: #e6f0ff;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: #004a99;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #003366;
+}
+
+/* Radio buttons and checkboxes inline */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #004a99;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .gallery img {
+    width: 80%;
+    max-width: none;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
